@@ -311,7 +311,7 @@ function Methodology() {
             </div>
           ))}
           </div>
-          
+
           {/* Mobile Buttons */}
           <div className="flex md:hidden justify-center gap-4 mt-[-1rem] mb-8">
             <button onClick={() => scroll('left')} className="p-3 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-emerald-100 text-zinc-600 dark:text-zinc-300 transition-colors">
@@ -387,10 +387,10 @@ function AboutMe() {
     <section className="relative pt-24 pb-32 md:pb-48 bg-zinc-950 text-white px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
         <div className="w-full md:w-2/5 aspect-[3/4] rounded-3xl overflow-hidden relative shadow-2xl shadow-emerald-900/20 ring-1 ring-white/10 group">
-          <Image 
-            src="/doutora.jfif" 
-            alt="Doutora - Retrato Profissional" 
-            fill 
+          <Image
+            src="/doutora.jpg"
+            alt="Doutora - Retrato Profissional"
+            fill
             sizes="(max-width: 768px) 100vw, 40vw"
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
