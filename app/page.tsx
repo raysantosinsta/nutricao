@@ -91,6 +91,7 @@ function HeroSection() {
                 alt="Profissional Nutricionista"
                 fill
                 priority
+                fetchPriority="high"
                 sizes="(max-width: 768px) 100vw, 700px"
                 className="object-cover object-center brightness-[1.05] contrast-[1.1] saturate-[1.1] transition-transform duration-700 group-hover:scale-[1.02]"
               />
@@ -108,7 +109,7 @@ function HeroSection() {
       </div>
 
       {/* Efeito de Onda Animada */}
-      <WaveDivider fillClass="fill-zinc-50 dark:fill-zinc-900" />
+      <WaveDivider fillClass="fill-white" />
     </section>
   );
 }
@@ -138,7 +139,7 @@ function PainPoints() {
   ];
 
   return (
-    <section className="relative pt-24 pb-32 md:pb-48 bg-zinc-50 dark:bg-zinc-900 px-6 lg:px-8">
+    <section className="relative pt-24 pb-32 md:pb-48 bg-white px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
         {/* NOVA SEÇÃO: Resultados Comprovados */}
@@ -166,20 +167,20 @@ function PainPoints() {
               <span>Resultados Comprovados</span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 dark:text-white mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-900 mb-6 leading-tight">
               Resultados reais com quem vive o que prescreve
             </h2>
 
             <div className="space-y-4 mb-8">
-              <p className="text-lg text-zinc-600 dark:text-zinc-300">
+              <p className="text-lg text-zinc-600">
                 Com uma abordagem prática e individualizada, os pacientes da Dra. Eclesyrlanya atingem suas metas com consistência.
               </p>
-              <p className="text-lg text-zinc-600 dark:text-zinc-300">
+              <p className="text-lg text-zinc-600">
                 Seja para reduzir gordura, ganhar massa muscular, o plano é feito sob medida — e entregue já na consulta.
               </p>
             </div>
 
-            <p className="text-xl font-semibold text-zinc-900 dark:text-white mb-8">
+            <p className="text-xl font-semibold text-zinc-900 mb-8">
               Quer ter resultados assim?
             </p>
 
@@ -195,8 +196,8 @@ function PainPoints() {
 
         {/* SECÃO DOS CARDS (Dores / Identificação) */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-4">Você se identifica com alguma dessas situações?</h2>
-          <p className="text-lg text-zinc-600 dark:text-zinc-400">Se você está enfrentando um desses desafios, saiba que você não está sozinha e existe um protocolo seguro para reverter isso.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Você se identifica com alguma dessas situações?</h2>
+          <p className="text-lg text-zinc-600">Se você está enfrentando um desses desafios, saiba que você não está sozinha e existe um protocolo seguro para reverter isso.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -226,7 +227,7 @@ function PainPoints() {
           ))}
         </div>
       </div>
-      <WaveDivider fillClass="fill-white dark:fill-zinc-950" />
+      <WaveDivider fillClass="fill-zinc-950" />
     </section>
   );
 }
@@ -271,18 +272,18 @@ function Methodology() {
   ];
 
   return (
-    <section className="relative pt-24 pb-32 md:pb-48 bg-white dark:bg-zinc-950 px-6 lg:px-8 overflow-hidden">
+    <section className="relative pt-24 pb-32 md:pb-48 bg-zinc-950 px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <div className="text-left">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-4">O Método: Previsibilidade e Segurança</h2>
-            <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl">Um passo a passo validado para garantir que seu processo seja saudável, sustentável e com resultados definitivos.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">O Método: Previsibilidade e Segurança</h2>
+            <p className="text-lg text-zinc-400 max-w-2xl">Um passo a passo validado para garantir que seu processo seja saudável, sustentável e com resultados definitivos.</p>
           </div>
           <div className="hidden md:flex gap-3">
-            <button onClick={() => scroll('left')} className="p-3 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 text-zinc-600 dark:text-zinc-300 transition-colors">
+            <button onClick={() => scroll('left')} className="p-3 rounded-full bg-zinc-800 hover:bg-emerald-900/40 text-zinc-300 transition-colors">
               <ChevronLeft className="w-6 h-6" />
             </button>
-            <button onClick={() => scroll('right')} className="p-3 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 text-zinc-600 dark:text-zinc-300 transition-colors">
+            <button onClick={() => scroll('right')} className="p-3 rounded-full bg-zinc-800 hover:bg-emerald-900/40 text-zinc-300 transition-colors">
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
@@ -291,7 +292,7 @@ function Methodology() {
         <div className="relative">
           <div ref={scrollRef} className="flex gap-6 overflow-x-auto pb-12 snap-x hide-scrollbar scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] px-4 -mx-4 md:px-0 md:mx-0">
           {steps.map((step, i) => (
-            <div key={i} className="min-w-[85vw] md:min-w-[350px] lg:min-w-[400px] snap-center relative rounded-3xl overflow-hidden aspect-[3/4] group border border-zinc-200 dark:border-zinc-800 shadow-xl hover:-translate-y-2 transition-all duration-500">
+            <div key={i} className="min-w-[85vw] md:min-w-[350px] lg:min-w-[400px] snap-center relative rounded-3xl overflow-hidden aspect-[3/4] group border border-zinc-800 shadow-xl hover:-translate-y-2 transition-all duration-500">
               <Image
                 src={step.image}
                 alt={step.title}
@@ -314,10 +315,10 @@ function Methodology() {
 
           {/* Mobile Buttons */}
           <div className="flex md:hidden justify-center gap-4 mt-[-1rem] mb-8">
-            <button onClick={() => scroll('left')} className="p-3 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-emerald-100 text-zinc-600 dark:text-zinc-300 transition-colors">
+            <button onClick={() => scroll('left')} className="p-3 rounded-full bg-zinc-800 hover:bg-emerald-900 text-zinc-300 transition-colors">
               <ChevronLeft className="w-6 h-6" />
             </button>
-            <button onClick={() => scroll('right')} className="p-3 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:bg-emerald-100 text-zinc-600 dark:text-zinc-300 transition-colors">
+            <button onClick={() => scroll('right')} className="p-3 rounded-full bg-zinc-800 hover:bg-emerald-900 text-zinc-300 transition-colors">
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
@@ -384,9 +385,9 @@ function ServicesCombos() {
 
 function AboutMe() {
   return (
-    <section className="relative pt-24 pb-32 md:pb-48 bg-zinc-950 text-white px-6 lg:px-8">
+    <section className="relative pt-24 pb-32 md:pb-48 bg-white px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-        <div className="w-full md:w-2/5 aspect-[3/4] rounded-3xl overflow-hidden relative shadow-2xl shadow-emerald-900/20 ring-1 ring-white/10 group">
+        <div className="w-full md:w-2/5 aspect-[3/4] rounded-3xl overflow-hidden relative shadow-2xl shadow-emerald-900/20 ring-1 ring-zinc-200 group">
           <Image
             src="/doutora.jpg"
             alt="Doutora - Retrato Profissional"
@@ -397,12 +398,12 @@ function AboutMe() {
         </div>
 
         <div className="w-full md:w-3/5 space-y-6">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-400 font-medium text-sm border border-emerald-500/30">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-600 font-medium text-sm border border-emerald-200">
             Dupla Graduação: Enfermeira & Nutricionista
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold">Mais de 2.000 vidas transformadas através da ciência.</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-zinc-900">Mais de 2.000 vidas transformadas através da ciência.</h2>
 
-          <div className="text-zinc-300 space-y-4 text-lg">
+          <div className="text-zinc-600 space-y-4 text-lg">
             <p>
               Com a minha dupla formação em Nutrição e Enfermagem, eu ofereço um olhar 360º sobre o seu corpo. Não se trata apenas de passar uma dieta, mas de entender o seu metabolismo e cuidar clinicamente de cada sintoma.
             </p>
@@ -412,16 +413,16 @@ function AboutMe() {
           </div>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <div className="px-6 py-3 rounded-xl bg-zinc-800 border border-zinc-700 text-zinc-300 font-mono text-sm">
+            <div className="px-6 py-3 rounded-xl bg-zinc-100 border border-zinc-200 text-zinc-700 font-mono text-sm">
               CRN: 12345/XX
             </div>
-            <div className="px-6 py-3 rounded-xl bg-zinc-800 border border-zinc-700 text-zinc-300 font-mono text-sm">
+            <div className="px-6 py-3 rounded-xl bg-zinc-100 border border-zinc-200 text-zinc-700 font-mono text-sm">
               COREN: 123456-XX
             </div>
           </div>
         </div>
       </div>
-      <WaveDivider fillClass="fill-zinc-50 dark:fill-zinc-900" />
+      <WaveDivider fillClass="fill-zinc-950" />
     </section>
   );
 }
@@ -469,18 +470,18 @@ function SocialProof() {
   ];
 
   return (
-    <section className="relative pt-24 pb-32 md:pb-48 bg-zinc-50 dark:bg-zinc-900 px-6 lg:px-8 overflow-hidden">
+    <section className="relative pt-24 pb-32 md:pb-48 bg-zinc-950 px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-16 gap-6">
           <div className="text-left">
-            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-4">O que dizem meus pacientes</h2>
-            <p className="text-lg text-zinc-600 dark:text-zinc-400">Relatos reais de energia recuperada, alívio de sintomas e metas alcançadas.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">O que dizem meus pacientes</h2>
+            <p className="text-lg text-zinc-400">Relatos reais de energia recuperada, alívio de sintomas e metas alcançadas.</p>
           </div>
           <div className="hidden md:flex gap-3 shrink-0">
-            <button onClick={() => scroll('left')} className="p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-emerald-50 text-zinc-600 dark:text-zinc-300 transition-colors">
+            <button onClick={() => scroll('left')} className="p-3 rounded-full bg-zinc-800 border border-zinc-700 hover:bg-emerald-900/40 text-zinc-300 transition-colors">
               <ChevronLeft className="w-6 h-6" />
             </button>
-            <button onClick={() => scroll('right')} className="p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-emerald-50 text-zinc-600 dark:text-zinc-300 transition-colors">
+            <button onClick={() => scroll('right')} className="p-3 rounded-full bg-zinc-800 border border-zinc-700 hover:bg-emerald-900/40 text-zinc-300 transition-colors">
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
@@ -489,13 +490,13 @@ function SocialProof() {
         <div className="relative">
           <div ref={scrollRef} className="flex gap-6 overflow-x-auto pb-8 snap-x hide-scrollbar scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] px-4 -mx-4 md:px-0 md:mx-0">
           {testimonials.map((item) => (
-            <div key={item.id} className="min-w-[300px] md:min-w-[400px] snap-center bg-zinc-50 dark:bg-zinc-900 p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800">
+            <div key={item.id} className="min-w-[300px] md:min-w-[400px] snap-center bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
               <div className="flex text-emerald-500 mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} className="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                 ))}
               </div>
-              <p className="text-zinc-700 dark:text-zinc-300 italic mb-6">
+              <p className="text-zinc-300 italic mb-6">
                 "{item.text}"
               </p>
               <div className="flex items-center gap-3">
@@ -503,8 +504,8 @@ function SocialProof() {
                   <img src={item.avatar} alt={`Paciente ${item.name}`} className="object-cover w-full h-full" />
                 </div>
                 <div>
-                  <p className="font-semibold text-zinc-900 dark:text-white">{item.name}</p>
-                  <p className="text-sm text-zinc-500">{item.time}</p>
+                  <p className="font-semibold text-white">{item.name}</p>
+                  <p className="text-sm text-zinc-400">{item.time}</p>
                 </div>
               </div>
             </div>
@@ -513,16 +514,16 @@ function SocialProof() {
 
           {/* Mobile Buttons */}
           <div className="flex md:hidden justify-center gap-4 mt-2 mb-8">
-            <button onClick={() => scroll('left')} className="p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-emerald-50 text-zinc-600 dark:text-zinc-300 transition-colors">
+            <button onClick={() => scroll('left')} className="p-3 rounded-full bg-zinc-800 border border-zinc-700 hover:bg-emerald-900 text-zinc-300 transition-colors">
               <ChevronLeft className="w-6 h-6" />
             </button>
-            <button onClick={() => scroll('right')} className="p-3 rounded-full bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:bg-emerald-50 text-zinc-600 dark:text-zinc-300 transition-colors">
+            <button onClick={() => scroll('right')} className="p-3 rounded-full bg-zinc-800 border border-zinc-700 hover:bg-emerald-900 text-zinc-300 transition-colors">
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
         </div>
       </div>
-      <WaveDivider fillClass="fill-white dark:fill-zinc-950" />
+      <WaveDivider fillClass="fill-white" />
     </section>
   );
 }
@@ -550,32 +551,32 @@ function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="relative pt-24 pb-32 md:pb-48 bg-white dark:bg-zinc-950 px-6 lg:px-8">
+    <section className="relative pt-24 pb-32 md:pb-48 bg-white px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-4">Perguntas Frequentes</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Perguntas Frequentes</h2>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden transition-all">
+            <div key={i} className="bg-white rounded-2xl border border-zinc-200 overflow-hidden transition-all">
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none"
               >
-                <span className="font-semibold text-zinc-900 dark:text-white text-lg pr-8">{faq.q}</span>
+                <span className="font-semibold text-zinc-900 text-lg pr-8">{faq.q}</span>
                 <ChevronDown className={`w-5 h-5 text-emerald-500 transition-transform ${openIndex === i ? "rotate-180" : ""}`} />
               </button>
               <div
                 className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === i ? "max-h-40 pb-5 opacity-100" : "max-h-0 opacity-0"}`}
               >
-                <p className="text-zinc-600 dark:text-zinc-400">{faq.a}</p>
+                <p className="text-zinc-600">{faq.a}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <WaveDivider fillClass="fill-zinc-950 dark:fill-zinc-950" />
+      <WaveDivider fillClass="fill-zinc-950" />
     </section>
   );
 }
