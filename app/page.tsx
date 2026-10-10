@@ -323,19 +323,19 @@ function Methodology() {
           </div>
         </div>
       </div>
-      <WaveDivider fillClass="fill-emerald-900 dark:fill-zinc-900" />
+      <WaveDivider fillClass="fill-emerald-900" />
     </section>
   );
 }
 
 function ServicesCombos() {
   return (
-    <section className="relative pt-24 pb-32 md:pb-48 bg-emerald-900 dark:bg-zinc-900 px-6 lg:px-8">
+    <section className="relative pt-24 pb-32 md:pb-48 bg-emerald-900 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="flex-1 space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-white">Solução Completa: Combos & Injetáveis</h2>
-            <p className="text-lg text-emerald-50 dark:text-zinc-400">
+            <p className="text-lg text-emerald-50">
               Não basta apenas tomar a medicação. Seu corpo precisa de suporte para metabolizar, gerar energia e preservar a saúde estrutural (cabelos, unhas, músculos).
             </p>
 
@@ -344,27 +344,27 @@ function ServicesCombos() {
                 <div className="mt-1"><Syringe className="w-6 h-6 text-emerald-400" /></div>
                 <div>
                   <h4 className="text-xl font-semibold text-white">Suplementação Injetável</h4>
-                  <p className="text-emerald-100/80 dark:text-zinc-400">Absorção direta (100% de aproveitamento), suporte vitamínico imediato, blindagem contra queda de cabelo e recuperação da disposição.</p>
+                  <p className="text-emerald-100/80">Absorção direta (100% de aproveitamento), suporte vitamínico imediato, blindagem contra queda de cabelo e recuperação da disposição.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <div className="mt-1"><CheckCircle2 className="w-6 h-6 text-emerald-400" /></div>
                 <div>
                   <h4 className="text-xl font-semibold text-white">Combos Estratégicos</h4>
-                  <p className="text-emerald-100/80 dark:text-zinc-400">Kits de produtos selecionados clinicamente para apoiar cada fase do emagrecimento, focados em saciedade, controle glicêmico e saúde intestinal.</p>
+                  <p className="text-emerald-100/80">Kits de produtos selecionados clinicamente para apoiar cada fase do emagrecimento, focados em saciedade, controle glicêmico e saúde intestinal.</p>
                 </div>
               </div>
             </div>
 
             <div className="pt-4">
-              <a href="https://wa.me/5585999668826?text=Quero%20conhecer%20os%20protocolos%20injet%C3%A1veis." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white dark:bg-zinc-100 text-emerald-900 dark:text-zinc-900 rounded-full font-semibold text-lg transition-all hover:bg-emerald-50 dark:hover:bg-white hover:scale-105">
+              <a href="https://wa.me/5585999668826?text=Quero%20conhecer%20os%20protocolos%20injet%C3%A1veis." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-emerald-900 rounded-full font-semibold text-lg transition-all hover:bg-emerald-50 hover:scale-105">
                 Falar com a equipe sobre protocolos
               </a>
             </div>
           </div>
 
           <div className="flex-1 w-full">
-            <div className="relative aspect-square md:aspect-video lg:aspect-square rounded-3xl overflow-hidden border border-emerald-800 dark:border-emerald-800/50 shadow-2xl group ring-1 ring-white/20 dark:ring-white/10">
+            <div className="relative aspect-square md:aspect-video lg:aspect-square rounded-3xl overflow-hidden border border-emerald-800 shadow-2xl group ring-1 ring-white/20">
               <Image
                 src="/bora.jpg"
                 alt="Combo de Suplementos e Aplicação Clínica"
